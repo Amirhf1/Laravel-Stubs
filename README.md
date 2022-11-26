@@ -1,52 +1,21 @@
-# Very short description of the package
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/amirhf/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/amirhf/laravel-stubs)
-[![Total Downloads](https://img.shields.io/packagist/dt/amirhf/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/amirhf/laravel-stubs)
-![GitHub Actions](https://github.com/amirhf/laravel-stubs/actions/workflows/main.yml/badge.svg)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+# Laravel Stubs
+This repository contains an opinionated version of the Laravel default stubs that may be amended after publishing. In order to make them as strict as possible, these are not intended for everyone.
 
 ## Installation
 
-You can install the package via composer:
+You can install this package using composer:
 
 ```bash
-composer require amirhf/laravel-stubs
+composer require --dev amirhf/laravel-stubs
 ```
 
-## Usage
-
-```php
-// Usage description here
-```
-
-### Testing
+## Testing
 
 ```bash
 composer test
 ```
 
-### Changelog
+## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email amirhf12x@gmail.com instead of using the issue tracker.
-
-## Credits
-
--   [amirhf](https://github.com/amirhf)
--   [All Contributors](../../contributors)
-
-## License
-
-The Apache License 2. Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+cense (MIT). Please see License File for more information.
