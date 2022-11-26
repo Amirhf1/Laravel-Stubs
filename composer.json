@@ -1,0 +1,54 @@
+{
+    "name": "amirhf/laravel-stubs",
+    "description": "This repository contains an opinionated version of the Laravel default stubs that may be amended after publishing. In order to make them as strict as possible, these are not intended for everyone.",
+    "keywords": [
+        "amirhf",
+        "laravel-stubs"
+    ],
+    "homepage": "https://github.com/amirhf/laravel-stubs",
+    "license": "Apache-2.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "amirhf",
+            "email": "amirhf12x@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amirhf\\LaravelStubs\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amirhf\\LaravelStubs\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amirhf\\LaravelStubs\\LaravelStubsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelStubs": "Amirhf\\LaravelStubs\\LaravelStubsFacade"
+            }
+        }
+    }
+}
