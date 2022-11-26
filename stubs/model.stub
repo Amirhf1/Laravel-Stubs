@@ -1,0 +1,40 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Snowflake\SnowflakeCast;
+use Snowflake\Snowflakes;
+
+class {{ class }} extends Model
+{
+    use Snowflakes;
+    use HasFactory;
+
+    /**
+     * @var array<int,string>
+     */
+    protected $fillable = [];
+
+    /**
+     * @var array<string,string|class-string>
+     */
+    protected $casts = [
+        'id' => SnowflakeCast::class,
+    ];
+
+    // relationships
+
+    /**
+     * @param Builder $query
+     * @return Builder|static
+     */
+    public function newEloquentBuilder($query): Builder|static
+    {
+        return parent::newEloquentBuilder($query);
+    }
+}
