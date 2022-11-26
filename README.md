@@ -8,7 +8,10 @@ You can install this package using composer:
 ```bash
 composer require --dev amirhf/laravel-stubs
 ```
-
+And finally, add the stubs using the command below:
+```
+php artisan publish:stubs --force
+```
 ## Testing
 
 ```bash
